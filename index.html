@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinku Rai Building Material</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Pinku Rai Building Material</h1>
+    <p>Your trusted partner for quality construction materials</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#other-products">Other Products</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <!-- Steel Rods (kg) -->
+      <div class="product">
+        <img src="steel-rod.jpg" alt="Steel Rod">
+        <h3>Steel Rod (8mm)</h3>
+        <p>High-tensile steel rods - sold per kg</p>
+        <p class="price">$5 per kg</p>
+        <div class="quantity-selector">
+          <label for="quantity-steel-8mm">Quantity (kg):</label>
+          <input type="number" id="quantity-steel-8mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Steel Rod (8mm)', 5, 'quantity-steel-8mm')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="steel-rod.jpg" alt="Steel Rod">
+        <h3>Steel Rod (10mm)</h3>
+        <p>High-tensile steel rods - sold per kg</p>
+        <p class="price">$6 per kg</p>
+        <div class="quantity-selector">
+          <label for="quantity-steel-10mm">Quantity (kg):</label>
+          <input type="number" id="quantity-steel-10mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Steel Rod (10mm)', 6, 'quantity-steel-10mm')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="steel-rod.jpg" alt="Steel Rod">
+        <h3>Steel Rod (16mm)</h3>
+        <p>High-tensile steel rods - sold per kg</p>
+        <p class="price">$8 per kg</p>
+        <div class="quantity-selector">
+          <label for="quantity-steel-16mm">Quantity (kg):</label>
+          <input type="number" id="quantity-steel-16mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Steel Rod (16mm)', 8, 'quantity-steel-16mm')">Buy Now</button>
+      </div>
+
+      <!-- Tata Steel Rods (pieces) -->
+      <div class="product">
+        <img src="tata-steel.jpg" alt="Tata Steel Rod">
+        <h3>Tata Steel Rod (8mm)</h3>
+        <p>Premium Tata steel rods - sold per piece</p>
+        <p class="price">$10 per piece</p>
+        <div class="quantity-selector">
+          <label for="quantity-tata-8mm">Quantity (pieces):</label>
+          <input type="number" id="quantity-tata-8mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Tata Steel Rod (8mm)', 10, 'quantity-tata-8mm')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="tata-steel.jpg" alt="Tata Steel Rod">
+        <h3>Tata Steel Rod (10mm)</h3>
+        <p>Premium Tata steel rods - sold per piece</p>
+        <p class="price">$12 per piece</p>
+        <div class="quantity-selector">
+          <label for="quantity-tata-10mm">Quantity (pieces):</label>
+          <input type="number" id="quantity-tata-10mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Tata Steel Rod (10mm)', 12, 'quantity-tata-10mm')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="tata-steel.jpg" alt="Tata Steel Rod">
+        <h3>Tata Steel Rod (16mm)</h3>
+        <p>Premium Tata steel rods - sold per piece</p>
+        <p class="price">$15 per piece</p>
+        <div class="quantity-selector">
+          <label for="quantity-tata-16mm">Quantity (pieces):</label>
+          <input type="number" id="quantity-tata-16mm" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('Tata Steel Rod (16mm)', 15, 'quantity-tata-16mm')">Buy Now</button>
+      </div>
+
+      <!-- ACC Cement and Variants -->
+      <div class="product">
+        <img src="acc-cement.jpg" alt="ACC Cement">
+        <h3>ACC Cement</h3>
+        <p>Premium quality cement for construction</p>
+        <p class="price">$10 per bag</p>
+        <div class="quantity-selector">
+          <label for="quantity-acc-cement">Quantity (bags):</label>
+          <input type="number" id="quantity-acc-cement" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('ACC Cement', 10, 'quantity-acc-cement')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="acc-suraksha.jpg" alt="ACC Suraksha">
+        <h3>ACC Suraksha</h3>
+        <p>Water-resistant cement for durability</p>
+        <p class="price">$12 per bag</p>
+        <div class="quantity-selector">
+          <label for="quantity-acc-suraksha">Quantity (bags):</label>
+          <input type="number" id="quantity-acc-suraksha" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('ACC Suraksha', 12, 'quantity-acc-suraksha')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="acc-gold.jpg" alt="ACC Gold">
+        <h3>ACC Gold</h3>
+        <p>High-strength cement for premium construction</p>
+        <p class="price">$15 per bag</p>
+        <div class="quantity-selector">
+          <label for="quantity-acc-gold">Quantity (bags):</label>
+          <input type="number" id="quantity-acc-gold" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('ACC Gold', 15, 'quantity-acc-gold')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="mysem-cement.jpg" alt="MySEM Cement">
+        <h3>MySEM Cement</h3>
+        <p>Affordable and reliable cement for all construction needs</p>
+        <p class="price">$8 per bag</p>
+        <div class="quantity-selector">
+          <label for="quantity-mysem-cement">Quantity (bags):</label>
+          <input type="number" id="quantity-mysem-cement" min="1" value="1">
+        </div>
+        <button class="buy-button" onclick="handlePayment('MySEM Cement', 8, 'quantity-mysem-cement')">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <p>
+      Pinku Rai Building Material has been a trusted name in the construction industry for over 20 years. 
+      We provide high-quality building materials at competitive prices. Our mission is to deliver excellence 
+      and reliability to our customers, ensuring their projects are built to last.
+    </p>
+  </div>
+
+  <!-- Other Products Section -->
+  <div class="container" id="other-products">
+    <h2>Other Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="paints.jpg" alt="Paints">
+        <h3>Paints</h3>
+        <p>High-quality wall paints</p>
+        <p class="price">$25 per gallon</p>
+        <button class="buy-button" onclick="handlePayment('Paints', 25, 'quantity-paints')">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="sand.jpg" alt="Sand">
+        <h3>Sand</h3>
+        <p>Fine construction sand</p>
+        <p class="price">$20 per ton</p>
+        <button class="buy-button" onclick="handlePayment('Sand', 20, 'quantity-sand')">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Reach out to us!</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="buy-button">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Pinku Rai Building Material. All rights reserved.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
